@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "f0fd8a0f-7913-4ac4-a814-71cdba28bf1a",
+		"name": "University Management API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40732331",
+		"_collection_link": "https://martian-capsule-411591.postman.co/workspace/API-testing-again~2f6d50de-f4d2-4d42-94b1-13c0c81b4052/collection/40732331-f0fd8a0f-7913-4ac4-a814-71cdba28bf1a?action=share&source=collection_link&creator=40732331"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl_4}}",
+					"host": [
+						"{{BaseUrl_4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Awais chinnal\",\r\n    \"email\": \"awais12@gmail.com\",\r\n    \"course\": \"fyp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl_4}}/users",
+					"host": [
+						"{{BaseUrl_4}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\": \"alyaan \",\r\n    \"email\": \"alyaan@gmail.com\",\r\n    \"course\": \"fyp2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl_4}}/users/2",
+					"host": [
+						"{{BaseUrl_4}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl_4}}/users/2",
+					"host": [
+						"{{BaseUrl_4}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{BaseUrl_4}}",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
